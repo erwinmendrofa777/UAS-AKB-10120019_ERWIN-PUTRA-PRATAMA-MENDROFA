@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="email_ed_hint">Enter your email address</string>
+    <string name="password_ed_hint">Enter your password</string>
+    <string name="sign_in_with_google">Sign In With Google</string>
+    <string name="login">Sign In</string>
+    <string name="register">Sign Up</string>
+    <string name="sign_up_text">Don\'t have an account? Sign up</string>
+    <string name="sign_in_text">Have an account? Sign in</string>
+    <string name="sign_up_with_google">Sign Up With Google</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="add_fab_content_desc">add a new note</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="sign_in_greeting">Welcome Back! ✍🏼</string>
+    <string name="sign_up_greeting">Hello There 👋🏻</string>
+    <string name="invalid_password">Password must be 8 characters long and without any spaces</string>
+    <string name="invalid_email_address">Please enter a valid email address</string>
+    <string name="login_successfully">Login successfully 😁</string>
+    <string name="dummy_student_name" translatable="false">Erwin Putra Pratama Mendrofa</string>
+    <string name="dummy_student_id" translatable="false">10120019</string>
+    <string name="dummy_class" translatable="false">IF-1</string>
+    <string name="dummy_email_address" translatable="false">erwin.10120019@mahasiswa.unikom.ac.id</string>
+    <string name="empty_notes_content_desc">notes is empty</string>
+    <string name="write_a_note">🖊️ Create a note and change your world, one word at a time. Happy writing! 🌟</string>
+    <string name="add_favorite_note">❤️ Add your favorite notes. Happy writing! 🌟</string>
+    <string name="search_hint">Search title</string>
+    <string name="hint_title">Title</string>
+    <string name="body_content_desc">Write something .....</string>
+    <string name="read">Read Mode</string>
+    <string name="favorite">Favorite</string>
+    <string name="remove">Remove</string>
+    <string name="app_description">Elevate your note-taking experience with our cutting-edge note application. Seamlessly capture your ideas, organize thoughts with tags, and access everything across devices. Effortlessly searchable, highly secure, and designed for collaboration, our app ensures that your notes are always at your fingertips. Embrace the future of note-taking and download now for a new level of productivity and creativity.</string>
+    <string name="profile">Profile</string>
+    <string name="description">Description</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_ed_hint">Masukkan alamat email Anda</string>
+    <string name="app_name">Catatan</string>
+    <string name="password_ed_hint">Masukkan kata sandi Anda</string>
+    <string name="sign_in_with_google">Masuk dengan Google</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="sign_up_text">Belum punya akun? Daftar</string>
+    <string name="sign_in_text">Sudah punya akun? Masuk</string>
+    <string name="sign_up_with_google">Daftar dengan Google</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="add_fab_content_desc">membuat note baru</string>
+    <string name="sign_out">Keluar</string>
+    <string name="home">Beranda</string>
+    <string name="about">Tentang</string>
+    <string name="sign_in_greeting">Selamat Datang! ✍🏼</string>
+    <string name="sign_up_greeting">Halo 👋🏻</string>
+    <string name="invalid_password">Kata sandi harus sepanjang 8 karakter dan tanpa spasi</string>
+    <string name="invalid_email_address">Silahkan masukkan alamat email yang benar</string>
+    <string name="login_successfully">Berhasil masuk 😁</string>
+    <string name="empty_notes_content_desc">tidak ada catatan</string>
+    <string name="write_a_note">🖊️ Buat catatan dan ubah dunia Anda, satu kata dalam satu waktu. Selamat menulis! 🌟</string>
+    <string name="add_favorite_note">❤️ Tambahkan catatan favorit Anda. Selamat menulis! 🌟</string>
+    <string name="search_hint">Cari judul</string>
+    <string name="hint_title">Judul</string>
+    <string name="body_content_desc">Tulis sesuatu .....</string>
+    <string name="read">Mode Baca</string>
+    <string name="favorite">Favorit</string>
+    <string name="remove">Hapus</string>
+    <string name="app_description">Tingkatkan pengalaman mencatat Anda dengan aplikasi catatan canggih kami. Tangkap ide Anda dengan mulus, atur pemikiran dengan tag, dan akses semuanya di seluruh perangkat. Mudah dicari, sangat aman, dan dirancang untuk kolaborasi, aplikasi kami memastikan bahwa catatan Anda selalu ada di ujung jari Anda. Rangkullah masa depan pencatatan dan unduh sekarang untuk tingkat produktivitas dan kreativitas yang baru.</string>
+    <string name="profile">Profil</string>
+    <string name="description">Deskripsi</string>
+</resources>

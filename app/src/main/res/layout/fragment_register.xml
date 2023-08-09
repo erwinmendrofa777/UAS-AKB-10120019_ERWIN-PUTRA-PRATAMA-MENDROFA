@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".presentation.login.LoginFragment">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimation"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie_login.json"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/email_address"
+            app:hintAnimationEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn"
+            app:placeholderText="@string/email_ed_hint"
+            app:startIconDrawable="@drawable/ic_email_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/password"
+            app:hintAnimationEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailInputLayout"
+            app:passwordToggleEnabled="true"
+            app:placeholderText="@string/password_ed_hint"
+            app:startIconDrawable="@drawable/ic_password_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionSend"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/emailSignUpBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/register"
+            android:textColor="?attr/colorOnPrimary"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordInputLayout"
+            app:layout_constraintStart_toStartOf="@+id/passwordInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+
+        <Button
+            android:id="@+id/googleSignUpBtn"
+            style="@style/ThemeOverlay.Material3.Button.ElevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_google_48dp"
+            android:text="@string/sign_up_with_google"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/emailSignUpBtn"
+            app:layout_constraintStart_toStartOf="@+id/emailSignUpBtn"
+            app:layout_constraintTop_toBottomOf="@+id/emailSignUpBtn"
+            app:rippleColor="?attr/colorOnSecondary"
+            app:strokeColor="?attr/colorSecondary"
+            app:strokeWidth="1dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/signIn"
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintEnd_toEndOf="@+id/lottieAnimation"
+            app:layout_constraintStart_toStartOf="@+id/lottieAnimation"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:text="@string/sign_in_text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextAppearance.Material3.HeadlineSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_greeting"
+            android:textColor="?attr/colorOnSurface"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/lottieAnimation"
+            app:layout_constraintStart_toStartOf="@+id/lottieAnimation"
+            app:layout_constraintTop_toBottomOf="@+id/lottieAnimation" />
+
+        <ProgressBar
+            android:id="@+id/emailProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="?attr/colorOnPrimary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/emailSignUpBtn"
+            app:layout_constraintEnd_toEndOf="@+id/emailSignUpBtn"
+            app:layout_constraintStart_toStartOf="@+id/emailSignUpBtn"
+            app:layout_constraintTop_toTopOf="@+id/emailSignUpBtn" />
+
+        <ProgressBar
+            android:id="@+id/googleProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:indeterminateTint="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/googleSignUpBtn"
+            app:layout_constraintEnd_toEndOf="@+id/googleSignUpBtn"
+            app:layout_constraintStart_toStartOf="@+id/googleSignUpBtn"
+            app:layout_constraintTop_toTopOf="@+id/googleSignUpBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

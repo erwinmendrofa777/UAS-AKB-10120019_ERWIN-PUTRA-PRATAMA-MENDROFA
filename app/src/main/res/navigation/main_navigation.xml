@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loadingFragment">
+
+    <include app:graph="@navigation/authentication" />
+    <include app:graph="@navigation/home" />
+    <include app:graph="@navigation/about" />
+    <action
+        android:id="@+id/action_global_about"
+        app:destination="@id/about"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_home"
+        app:destination="@id/home"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_authentication"
+        app:destination="@id/authentication"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="dev.erwin.todo.presentation.loading.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
+    <include app:graph="@navigation/favorite" />
+    <action
+        android:id="@+id/action_global_favorite"
+        app:destination="@id/favorite"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"
+        app:popUpTo="@id/main_navigation"
+        app:popUpToInclusive="true" />
+</navigation>

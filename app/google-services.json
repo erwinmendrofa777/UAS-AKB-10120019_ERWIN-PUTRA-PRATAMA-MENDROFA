@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "268417880357",
+    "firebase_url": "https://todo-a9028-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "todo-a9028",
+    "storage_bucket": "todo-a9028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268417880357:android:258757fcad6ff924958acc",
+        "android_client_info": {
+          "package_name": "dev.erwin.todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "268417880357-41lvv4ueghq3lncoia68mmaivqsq72ee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.erwin.todo",
+            "certificate_hash": "8e6b82e3ca182655ca3988b9502e00f812f671d8"
+          }
+        },
+        {
+          "client_id": "268417880357-67nh6l23ko3aualfh0mra3n9c5hoodps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH8vgxXPficO5a1cxJvGx8Swz2NqJrICc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "268417880357-03ngnbmbevv4sk8ahb73j05tikgci2pe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

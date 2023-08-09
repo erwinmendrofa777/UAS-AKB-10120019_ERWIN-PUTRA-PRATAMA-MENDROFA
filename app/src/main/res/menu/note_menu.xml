@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/readMode"
+        android:icon="@drawable/ic_round_menu_book_24dp"
+        android:title="@string/read"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/favoriteNote"
+        android:icon="@drawable/ic_round_favorite_border_24dp"
+        android:title="@string/favorite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/removeNote"
+        android:icon="@drawable/ic_round_delete_24dp"
+        android:title="@string/remove"
+        app:showAsAction="never" />
+
+
+</menu>
